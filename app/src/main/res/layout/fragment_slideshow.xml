@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_jso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_slideshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jso_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Safety Observation and Interaction"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/jso_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:" />
+
+            <EditText
+                android:id="@+id/jso_input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/jso_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time:" />
+
+            <EditText
+                android:id="@+id/jso_input_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/jso_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Site (Job Location):" />
+
+            <EditText
+                android:id="@+id/jso_input_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/jso_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:" />
+
+            <EditText
+                android:id="@+id/jso_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/jso_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task observed:" />
+
+                <EditText
+                    android:id="@+id/jso_input_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            <TextView
+                android:id="@+id/h2_body_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body Position and Use:"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/jso_line_of_fire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Line of Fire:"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+            <RadioButton
+                    android:id="@+id/lof_user_input_positive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/lof_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_pinch_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pinch Point:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/pp_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/pp_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_spatial_awareness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eyes on Path/Task:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/sa_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/sa_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+
+            <TextView
+                android:id="@+id/jso_lifting_lowering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lifting/Lowering:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/lilo_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/lilo_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_pushing_pulling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pushing/Pulling:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/push_pull_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/push_pull_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_ascend_descend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ascending/Descending:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/ascend_descend_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/ascend_descend_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_twist_stretch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Twisting/Stretching:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/twist_stretch_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/twist_stretch_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/h2_jso_tools_equipment_vehicles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tools/Equipment/Vehicle:"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/jso_tool_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tool Selection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/tool_selection__user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/tool_selection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_tool_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tool Condition/Inspection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/tool_condition_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/tool_condition_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_tool_proper_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proper/Correct Use:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/tool_use_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/tool_use_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+
+            <TextView
+                android:id="@+id/h2_ppe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Protective Equipment(PPE):"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/jso_head_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Head Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/head_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/head_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_eye_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eye Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/eye_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/eye_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/hearing_protection_proper_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hearing Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/hearing_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/hearing_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_respiratory_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respiratory Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/respiratory_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/respiratory_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_hand_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hand Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/hand_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/hand_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_foot_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foot Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/foot_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/foot_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_fall_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fall Protection:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/fall_protection_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/fall_protection_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/h2_surroundings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surroundings (Work Area):"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/jso_housekeeping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Housekeeping:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/housekeeping_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/housekeeping_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_walking_workspace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walking Working Surfaces:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/walking_workspace_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/walking_workspace_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/jso_good_access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Good Access:"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/good_access_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/good_access_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+            <TextView
+                android:id="@+id/h2_jso_interaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observation discussed with person"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/interaction_user_input_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive" />
+
+            <RadioButton
+                android:id="@+id/interaction_user_input_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk" />
+
+
+            <TextView
+                android:id="@+id/desc_at_risk_behaviour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At Risk Behaviour"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/desc_task_risk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Describe Task and Risk:" />
+
+            <EditText
+                android:id="@+id/task_risk_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_why"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Describe Why:" />
+
+            <EditText
+                android:id="@+id/desc_why_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_action_taken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Action Taken:" />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:id="@+id/action_taken_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_positive_behaviour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive Behaviour"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/desc_task_risk_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Describe Task and Risk:" />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:id="@+id/positive_task_risk_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_why_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Describe Why:" />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:id="@+id/positive_desc_why_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/positive_desc_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback provided to the worker:" />
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:id="@+id/positive_feedback_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <Button
+                android:id="@+id/submit_jso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

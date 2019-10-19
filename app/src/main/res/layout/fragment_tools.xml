@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout_hazard_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heading_hazard_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hazard Identification"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/h2_hazard_observed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hazard Observed:" />
+
+            <EditText
+                android:id="@+id/hazard_observed_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/h2_site_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Site/Location:" />
+
+            <EditText
+                android:id="@+id/site_location_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/h2_hazard_id_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/h2_hazard_id_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/h2_loss_potential"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss Potential"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:id="@+id/table_loss_potential"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.Fatality" />
+
+                    <CheckBox android:id="@+id/checkbox_fatality" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.Injury" />
+
+                    <CheckBox android:id="@+id/checkbox_injury" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.Fire" />
+
+                    <CheckBox android:id="@+id/checkbox_fire" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Security" />
+
+                    <CheckBox android:id="@+id/checkbox_security" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Pollution" />
+
+                    <CheckBox android:id="@+id/checkbox_pollution" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. Damage" />
+
+                    <CheckBox android:id="@+id/checkbox_damage" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7. Non conformance" />
+
+                    <CheckBox android:id="@+id/checkbox_non_conformance" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8. Near Accident" />
+
+                    <CheckBox android:id="@+id/checkbox_near_accident" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9. Natural" />
+
+                    <CheckBox android:id="@+id/checkbox_natural" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10. Environment" />
+
+                    <CheckBox android:id="@+id/checkbox_environment" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11. Production Loss" />
+
+                    <CheckBox android:id="@+id/checkbox_production_loss" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12. Other" />
+
+                    <CheckBox android:id="@+id/checkbox_other" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/h2_loss_severity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loss Severity"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/h2_minor_severity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Minor" />
+
+            <CheckBox android:id="@+id/checkbox_minor_severity"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/h2_serious_severity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serious" />
+
+            <CheckBox android:id="@+id/checkbox_serious_severity"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/h2_major_severity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Major" />
+
+            <CheckBox
+                android:id="@+id/checkbox_major_severity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/h2_reported_by"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reported By:"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+
+                        android:id="@+id/h2_supervisor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Supervisor:"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+
+                        android:id="@+id/h2_dept_contr_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Department/Contractor Name:"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+
+                    <EditText
+
+                        android:id="@+id/h2_business_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Business Unit:"
+                        android:textSize="20sp" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/h2_immediate_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Immediate Action Taken"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/immediate_action_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/h2_follow_up_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow Up Action Required"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/follow_up_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/h2_follow_up_action_due_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Due Date"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/follow_up_action_due_date_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/h2_follow_up_action_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Action By"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/action_by_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/h2_follow_up_action_dept_contr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department/Contractor Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dept_contr_name_user_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/submit_hazard_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

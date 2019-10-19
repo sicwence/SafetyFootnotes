@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_take5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/emp_name"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="Employee Name:" />
+
+            <EditText
+                android:id="@+id/name_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/emp_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Number:" />
+
+            <EditText
+                android:id="@+id/employee_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:" />
+
+            <EditText
+                android:id="@+id/current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="datetime" />
+
+            <TextView
+                android:id="@+id/job_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Location:" />
+
+            <EditText
+                android:id="@+id/location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/job_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Description:" />
+
+            <EditText
+                android:id="@+id/desc_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="" />
+
+            <TextView
+                android:id="@+id/emp_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. EMPLOYEE"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fit_for-work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Am I fit for work today?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <TextView
+                android:id="@+id/comp_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. COMPETENCY"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trained_for_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Am I trained and competent for this task?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <TextView
+                android:id="@+id/authorized_for_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Am I authorized to do this task?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <TextView
+                android:id="@+id/tools_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. TOOLS AND EQUIPMENT"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tools_for_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do I have the correct tools for the job?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <TextView
+                android:id="@+id/checked_tools_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have I checked my tools to confirm that they are in good condition?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+            <TextView
+                android:id="@+id/trained_to_use_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have I been trained to use my tools safely?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+
+            <TextView
+                android:id="@+id/risk_hazard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.RISK OR HAZARDS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_risk_hazard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identify and list 3 Risks or Hazards:"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/list_risk_hard_userInput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/list_risk_hard_userInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/list_risk_hard_userInput3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/list_controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List 3 Controls for the  identified Risks or Hazards:"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/list_controls_userInput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/list_controls_userInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/list_controls_userInput3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/add_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. ADDITIONAL CONTROLS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/add_con_need"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I need a:" />
+
+            <CheckBox
+                android:id="@+id/need_jsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JSA" />
+
+            <CheckBox
+                android:id="@+id/need_swp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWP" />
+
+            <CheckBox
+                android:id="@+id/need_permit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permit" />
+
+            <TextView
+                android:id="@+id/cons_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do I have the JSA/SWP/Permit at the job site?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <TextView
+                android:id="@+id/cons_supervisor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have I reviewed the JSA/SWP/Permit with approval from my Supervisor?"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButtonYes7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <Button
+                android:id="@+id/submit_take5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
